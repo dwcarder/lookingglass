@@ -3,6 +3,7 @@ Looking Glass Router Proxy
 
 ## Requirements
 - [clogin2](https://github.com/dwcarder/clogin2) or any of the login expect scripts from [rancid](http://www.shrubbery.net/rancid/)
+- timeout(1) from [GNU coreutils](https://www.gnu.org/software/coreutils/coreutils.html)
 
 ## Licensing, etc.
 - Apache 2.0 see the included file LICENSE for details
