@@ -471,7 +471,7 @@ sub printForm() {
   my $numitems = scalar(keys %devices);
   if ($numitems > 20) { $numitems = 20; }
 
-  print "<SELECT name=\"router\" size=\"$numitems\">\n";
+  print "<SELECT name=\"router\" size=\"$numitems\" onchange=\"displayCommands(this.options[this.selectedIndex].getAttribute('deviceclass'))\">\n";
   foreach my $dev (keys %devices) {
       my $devclass = $devices{$dev}{'deviceclass'};
       if (!$devclass) {
@@ -480,15 +480,10 @@ sub printForm() {
 	next;
 	# die $msg;
       }
-      print "<OPTION onmouseup=\"displayCommands('$devclass')\"";
+      print "<OPTION deviceclass=\"$devclass\"";
       print " selected=true" if ($router && $router eq $dev); 
-      print " VALUE=\"$dev\">\n";
-      print $devices{$dev}{'description'}."\n";
-
-      #print "<OPTION ontouchend=\"displayCommands('$devclass')\"";
-      #print " selected=true" if ($router && $router eq $dev);
-      #print " VALUE=\"$dev\">\n";
-      #print $devices{$dev}{'description'}."\n";
+      print " VALUE=\"$dev\">";
+      print $devices{$dev}{'description'}."</OPTION>\n";
   }
   print "</SELECT>\n";
 

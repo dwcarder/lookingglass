@@ -20,5 +20,5 @@ Looking Glass Router Proxy
 - Maintenance over 10+ years & a major refactoring by Charles Thomas
 - Updated to use clogin instead of Skriver's cisco telnet function, 
 - added some code clean up & safety additions to make suitable for public use.
-
+- javascript fixes by Chris Wopat from WiscNet
 
