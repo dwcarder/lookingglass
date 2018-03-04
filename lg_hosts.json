@@ -1,0 +1,572 @@
+{
+   "r-appleton-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-appleton-hub",
+      "deviceclass" : "junos"
+   },
+   "r-beaverdam-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-beaverdam-hub",
+      "deviceclass" : "junos"
+   },
+   "r-cvtc-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-cvtc-hub",
+      "deviceclass" : "junos"
+   },
+   "r-fonddulacci-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-fonddulacci-hub",
+      "deviceclass" : "junos"
+   },
+   "r-greenwood-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-greenwood-hub",
+      "deviceclass" : "junos"
+   },
+   "r-marion-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-marion-hub",
+      "deviceclass" : "junos"
+   },
+   "r-milwaukeeci-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-milwaukeeci-hub",
+      "deviceclass" : "junos"
+   },
+   "r-mx104-lab-ac" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-mx104-lab-ac",
+      "deviceclass" : "junos"
+   },
+   "r-mx104-lab-ac-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-mx104-lab-ac-2",
+      "deviceclass" : "junos"
+   },
+   "r-mx104-lab-dc" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-mx104-lab-dc",
+      "deviceclass" : "junos"
+   },
+   "r-mx2010-lab" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-mx2010-lab",
+      "deviceclass" : "junos"
+   },
+   "r-networks222-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-networks222-hub",
+      "deviceclass" : "junos"
+   },
+   "r-spd2-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-spd2-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwcbaraboosaukco" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcbaraboosaukco",
+      "deviceclass" : "junos"
+   },
+   "r-uwcbarronco-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcbarronco-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwcfonddulac" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcfonddulac",
+      "deviceclass" : "junos"
+   },
+   "r-uwcfoxvalley-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcfoxvalley-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwcmanitowoc" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcmanitowoc",
+      "deviceclass" : "junos"
+   },
+   "r-uwcmarathonco-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcmarathonco-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwcmarinette" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcmarinette",
+      "deviceclass" : "junos"
+   },
+   "r-uwcmarshfieldwoodco-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcmarshfieldwoodco-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwcollegesextension" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcollegesextension",
+      "deviceclass" : "junos"
+   },
+   "r-uwconline" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwconline",
+      "deviceclass" : "junos"
+   },
+   "r-uwcrichland" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcrichland",
+      "deviceclass" : "junos"
+   },
+   "r-uwcrockco" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcrockco",
+      "deviceclass" : "junos"
+   },
+   "r-uwcsheboygan" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcsheboygan",
+      "deviceclass" : "junos"
+   },
+   "r-uwcwashingtonco" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcwashingtonco",
+      "deviceclass" : "junos"
+   },
+   "r-uwcwaukesha" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwcwaukesha",
+      "deviceclass" : "junos"
+   },
+   "r-uweauclaire-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uweauclaire-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwgreenbay-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwgreenbay-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwgreenbay-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwgreenbay-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwlacrosse-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwlacrosse-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwlacrosse-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwlacrosse-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwmadison-432ecm-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwmadison-432ecm-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwmadison-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwmadison-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwmadison-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwmadison-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwmilwaukee-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwmilwaukee-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwmilwaukee-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwmilwaukee-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwoshkosh-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwoshkosh-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwoshkosh-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwoshkosh-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwparkside-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwparkside-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwparkside-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwparkside-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwplatteville-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwplatteville-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwplatteville-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwplatteville-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwriverfalls-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwriverfalls-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwriverfalls-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwriverfalls-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwstevenspoint-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwstevenspoint-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwstevenspoint-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwstevenspoint-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwstout-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwstout-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwstout-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwstout-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwsuperior-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwsuperior-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwsuperior-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwsuperior-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-uwwhitewater-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwwhitewater-hub",
+      "deviceclass" : "junos"
+   },
+   "r-uwwhitewater-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-uwwhitewater-hub-2",
+      "deviceclass" : "junos"
+   },
+   "r-watertown-hub" : {
+      "clogin" : "/usr/local/ns/bin/jlogin",
+      "description" : "r-watertown-hub",
+      "deviceclass" : "junos"
+   },
+   "r-wslh-barstow" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "r-wslh-barstow",
+      "deviceclass" : "ios-switch"
+   },
+   "s-cvtc-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-cvtc-hub",
+      "deviceclass" : "ios-switch"
+   },
+   "s-lab" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-lab",
+      "deviceclass" : "ios-switch"
+   },
+   "s-lab-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-lab-2",
+      "deviceclass" : "ios-switch"
+   },
+   "s-lab-3" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-lab-3",
+      "deviceclass" : "ios-switch"
+   },
+   "s-lab-4" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-lab-4",
+      "deviceclass" : "ios-switch"
+   },
+   "s-lab-5" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-lab-5",
+      "deviceclass" : "ios-switch"
+   },
+   "s-milwaukeeci-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-milwaukeeci-hub",
+      "deviceclass" : "ios-switch"
+   },
+   "s-networks222-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-networks222-hub",
+      "deviceclass" : "ios-switch"
+   },
+   "s-uwmadison-432ecm-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "s-uwmadison-432ecm-hub",
+      "deviceclass" : "ios-switch"
+   },
+   "t-appleton-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-appleton-hub",
+      "deviceclass" : "ios"
+   },
+   "t-beaverdam-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-beaverdam-hub",
+      "deviceclass" : "ios"
+   },
+   "t-cvtc-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-cvtc-hub",
+      "deviceclass" : "ios"
+   },
+   "t-fonddulacci-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-fonddulacci-hub",
+      "deviceclass" : "ios"
+   },
+   "t-greenwood-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-greenwood-hub",
+      "deviceclass" : "ios"
+   },
+   "t-lab-1" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-lab-1",
+      "deviceclass" : "ios"
+   },
+   "t-lab-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-lab-2",
+      "deviceclass" : "ios"
+   },
+   "t-lab-4g" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-lab-4g",
+      "deviceclass" : "ios"
+   },
+   "t-marion-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-marion-hub",
+      "deviceclass" : "ios"
+   },
+   "t-milwaukeeci-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-milwaukeeci-hub",
+      "deviceclass" : "ios"
+   },
+   "t-networks222-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-networks222-hub",
+      "deviceclass" : "ios"
+   },
+   "t-spd2-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-spd2-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwcbaraboosaukco" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcbaraboosaukco",
+      "deviceclass" : "ios"
+   },
+   "t-uwcbarronco-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcbarronco-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwcfonddulac" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcfonddulac",
+      "deviceclass" : "ios"
+   },
+   "t-uwcfoxvalley-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcfoxvalley-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwcmanitowoc" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcmanitowoc",
+      "deviceclass" : "ios"
+   },
+   "t-uwcmarathonco-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcmarathonco-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwcmarinette" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcmarinette",
+      "deviceclass" : "ios"
+   },
+   "t-uwcmarshfieldwoodco-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcmarshfieldwoodco-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwconline" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwconline",
+      "deviceclass" : "ios"
+   },
+   "t-uwcrichland" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcrichland",
+      "deviceclass" : "ios"
+   },
+   "t-uwcrockco" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcrockco",
+      "deviceclass" : "ios"
+   },
+   "t-uwcsheboygan" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcsheboygan",
+      "deviceclass" : "ios"
+   },
+   "t-uwcwashingtonco" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcwashingtonco",
+      "deviceclass" : "ios"
+   },
+   "t-uwcwaukesha" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwcwaukesha",
+      "deviceclass" : "ios"
+   },
+   "t-uweauclaire-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uweauclaire-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwgreenbay-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwgreenbay-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwgreenbay-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwgreenbay-hub-2",
+      "deviceclass" : "ios"
+   },
+   "t-uwlacrosse-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwlacrosse-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwlacrosse-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwlacrosse-hub-2",
+      "deviceclass" : "ios"
+   },
+   "t-uwmadison-432ecm-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwmadison-432ecm-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwmadison-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwmadison-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwmilwaukee-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwmilwaukee-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwoshkosh-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwoshkosh-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwoshkosh-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwoshkosh-hub-2",
+      "deviceclass" : "ios"
+   },
+   "t-uwparkside-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwparkside-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwplatteville-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwplatteville-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwplatteville-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwplatteville-hub-2",
+      "deviceclass" : "ios"
+   },
+   "t-uwriverfalls-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwriverfalls-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwriverfalls-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwriverfalls-hub-2",
+      "deviceclass" : "ios"
+   },
+   "t-uwstevenspoint-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwstevenspoint-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwstevenspoint-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwstevenspoint-hub-2",
+      "deviceclass" : "ios"
+   },
+   "t-uwstout-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwstout-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwstout-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwstout-hub-2",
+      "deviceclass" : "ios"
+   },
+   "t-uwsuperior-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwsuperior-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwwhitewater-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwwhitewater-hub",
+      "deviceclass" : "ios"
+   },
+   "t-uwwhitewater-hub-2" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-uwwhitewater-hub-2",
+      "deviceclass" : "ios"
+   },
+   "t-watertown-hub" : {
+      "clogin" : "/usr/local/ns/bin/clogin2",
+      "description" : "t-watertown-hub",
+      "deviceclass" : "ios"
+   }
+}
