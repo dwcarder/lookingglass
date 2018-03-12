@@ -437,8 +437,10 @@ sub shellToRouter($$)
 		#if ($line =~ m/error:/i) {
 		#	slog(4,"I found an error: $line");
 
+		# the SSH@hostname syntax is to all netiron/foundry/brocade/extreme/ruckus
+		# while trying to squelch all other artifacts from the device interaction
 		# this also may be a little bit too greedy..
-		if ($line =~ m/(ssh|password|spawn)/i) { 
+		if ($line =~ m/(ssh|password|spawn)/i && $line !~ /(^SSH\@)/ ) {
 			next; 
 		} elsif ( $line =~ m/^term width 0/) {	
 			$counter++;
