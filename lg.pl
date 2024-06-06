@@ -556,7 +556,6 @@ sub loadFile($$;$) {
     my $type = shift;
     my $fh;
 
-    die ("No file argument was passed from $caller_info") if !$file;
     die ("Couldn't read file '$file'" )  if (!(stat($file)));
 
     $fhresult = open($fh, $file);
@@ -570,7 +569,7 @@ sub loadFile($$;$) {
     if ( $type eq 'cfg' ) {
         %$hash = Config::General::ParseConfig(-String => $content, -SplitPolicy => "equalsign", CComments => 0);
 
-    else {  # type is json
+    } else {  # type is json
 
         my $valid_json = eval { %$hash = %{$json_obj->decode($content)}; 1 };
         unless($valid_json) {
