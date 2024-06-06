@@ -19,8 +19,8 @@
 #      some code clean up & safety additions to make suitable for public use.
 #	   This has differed far enough, that this is now version 2.0. 
 #	   Dale W. Carder, 2014-03-27
+#    - took out some UW library dependencies, 2024-05-06
 #
-#    $Id: lg.pl,v 1.17 2016-08-08 09:16:12-05 m7h Exp $
 #==================================================================
 
 
@@ -29,15 +29,12 @@
 #==================================================================
 use CGI qw(:standard);
 use CGI::Carp ('fatalsToBrowser');   # Send any errors to the browser
+use Config::General;
 use HTTP::Request::Common qw(GET);
+use JSON::XS;
 use strict;
 use Tie::IxHash;
-use Data::Dumper;
-
-use lib '/usr/local/ns/lib';
-use NS::Syslog 2.0 qw(slog);
-use NS::FileUtils;
-use NS::CGIUtils;
+#use Data::Dumper;  # only need this for debugging
 
 use Regexp::Common;
 use Regexp::IPv6 qw($IPv6_re);     # for testing IPv6 addresses
@@ -55,6 +52,8 @@ sub shellToRouter($$);
 sub printForm();
 sub printJavascriptCMDSelect();
 sub checkLockFile($);
+sub slog($$);
+sub loadFile($$;$);
 
 
 #==================================================================
@@ -65,11 +64,10 @@ my $config_file = '/usr/local/ns/etc/lg.config';
 my %config;
 
 {
-   my ($result, $err) = NS::FileUtils::loadFile(\%config, $config_file);
+   my ($result, $err) = loadFile(\%config, $config_file, 'cfg');
    die $err if $err;
 }
 
-NS::Syslog::setLogLevel(6);
 $ENV{'PATH'}='/bin:/usr/bin';	# for timeoutcmd
 $ENV{'HOME'}='/tmp';			# for clogin
 
@@ -85,7 +83,7 @@ my $quiet = '';
 
 my %valid_queries;
 {
-   my ($result, $err) = NS::FileUtils::loadFile(\%valid_queries, $config{'lg_commands'});
+   my ($result, $err) = loadFile(\%valid_queries, $config{'lg_commands'});
    die $err if $err;
 }
 
@@ -94,7 +92,7 @@ tie(%devices,'Tie::IxHash');
 
 {
    my %tmp;
-   my ($result, $err) = NS::FileUtils::loadFile(\%tmp, $config{'lg_hosts'});
+   my ($result, $err) = loadFile(\%tmp, $config{'lg_hosts'});
    die $err if $err;
 
    if ($config{'lg_hosts_unsorted'}) {
@@ -135,15 +133,6 @@ if ($quiet) {
    #print Dumper %ENV;
    #print "</pre>";
 
-   {
-   my $reason = NS::CGIUtils::isBadRobot(\%ENV);
-   if ($reason) {
-     my $msg = $reason . ' is blocked.  If this is in error, please contact our NOC';
-     slog (4, $msg);
-     print $msg;
-     exit;
-   } 
-   }
 
 validateParams();
 
@@ -549,5 +538,46 @@ sub checkLockFile($) {
 		}
 	}
 
+}
+
+sub slog($$) {
+    # parameters:
+    #   syslog severity (1-7)
+    #   log message (string)
+
+    # if you want to send stuff to syslog, put something here
+    return(1);
+
+}
+
+sub loadFile($$;$) {
+    my $hash = shift;
+    my $file = shift;
+    my $type = shift;
+    my $fh;
+
+    die ("No file argument was passed from $caller_info") if !$file;
+    die ("Couldn't read file '$file'" )  if (!(stat($file)));
+
+    $fhresult = open($fh, $file);
+    if (!$fhresult) {
+        die("loadFile $file failed: $!");
+    }
+
+    my $content = do { local $/; <$fh> };
+    close $fh;
+
+    if ( $type eq 'cfg' ) {
+        %$hash = Config::General::ParseConfig(-String => $content, -SplitPolicy => "equalsign", CComments => 0);
+
+    else {  # type is json
+
+        my $valid_json = eval { %$hash = %{$json_obj->decode($content)}; 1 };
+        unless($valid_json) {
+            slog(1, "file='$file' return invalid JSON");
+            die("invalid json in $file");
+        }
+    }
+    return(1);
 }
 
