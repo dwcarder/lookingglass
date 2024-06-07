@@ -558,7 +558,7 @@ sub loadFile($$;$) {
 
     die ("Couldn't read file '$file'" )  if (!(stat($file)));
 
-    $fhresult = open($fh, $file);
+    my $fhresult = open($fh, $file);
     if (!$fhresult) {
         die("loadFile $file failed: $!");
     }
@@ -571,6 +571,7 @@ sub loadFile($$;$) {
 
     } else {  # type is json
 
+        my $json_obj = JSON::XS->new->utf8;
         my $valid_json = eval { %$hash = %{$json_obj->decode($content)}; 1 };
         unless($valid_json) {
             slog(1, "file='$file' return invalid JSON");
