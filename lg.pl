@@ -454,7 +454,7 @@ sub shellToRouter($$)
 sub printForm() {
 
   print "<form method=\"GET\">\n";
-  print "<table align=\"center\" cellpading=10 cellspacing=10>";
+  print "<table align=\"center\" cellpadding=\"10\" cellspacing=\"10\">";
 
   print "<tr><td valign=\"top\" bgcolor=\"#EEEEEE\" >\n";
 
