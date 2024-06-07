@@ -303,7 +303,9 @@ sub processInput() {
 	}
   }
 
-  if ( $arg and $arg !~ /^[0-9a-zA-Z\.\s\-\_\s\$\*\+\/\\:|\?"]*$/ ) {
+  #wopat removed \? 2018-03-23
+  #if ( $arg and $arg !~ /^[0-9a-zA-Z\.\s\-\_\s\$\*\+\/\\:|\?"]*$/ ) {
+  if ( $arg and $arg !~ /^[0-9a-zA-Z\.\s\-\_\s\$\*\+\/\\:|"]*$/ ) {
     print "Checking characters in arg <br>\n" if $config{'debug'};
     printResults("Invalid characters in argument.\n");
 	slog(6,"$remotehost invalid characters in argument.");
