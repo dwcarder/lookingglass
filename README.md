@@ -2,13 +2,29 @@
 Looking Glass Router Proxy
 
 ## Requirements
-- [clogin2](https://github.com/dwcarder/clogin2) or any of the login expect scripts from [rancid](http://www.shrubbery.net/rancid/)
+- any of the login expect scripts from [rancid](http://www.shrubbery.net/rancid/) or [clogin2](https://github.com/dwcarder/clogin2)
 - timeout(1) from [GNU coreutils](https://www.gnu.org/software/coreutils/coreutils.html)
+
+## Installation prerequisites
+
+Ubuntu/Debian pacakges to install:
+```
+apt-get install libconfig-general-perl libtie-ixhash-perl libjson-xs-perl \
+        libregexp-common-perl libregexp-ipv6-perl
+
+```
+
+Centos packages to install:
+```
+yum install perl-Config-General.noarch perl-Tie-IxHash.noarch perl-JSON-XS.x86_64 \
+        perl-Regexp-Common.noarch perl-Regexp-IPv6.noarch
+```
 
 ## Licensing, etc.
 - Apache 2.0 see the included file LICENSE for details
 - Portions Copyright (c) the Trustees of Indiana University
 - Portions Copyright (c) The University of Wisconsin Board of Regents
+
 
 ## Changelog / lineage (that I know of):
 - Inspired by DIGEX, and the Looking Glass by Ed Kern, ejk@digex.net
@@ -20,5 +36,6 @@ Looking Glass Router Proxy
 - Maintenance over 10+ years & a major refactoring by Charles Thomas
 - Updated to use clogin instead of Skriver's cisco telnet function, 
 - added some code clean up & safety additions to make suitable for public use.
-- javascript fixes by Chris Wopat from WiscNet
+- html, javascript, and documentation updates by Chris Wopat from WiscNet
+
 
